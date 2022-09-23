@@ -39,7 +39,7 @@ class FollowSerializer(serializers.ModelSerializer):
     """Сериализатор для модели Follow."""
     user = SlugRelatedField(
         slug_field='username',
-        read_only=True, 
+        read_only=True,
         default=serializers.CurrentUserDefault()
     )
     following = SlugRelatedField(
