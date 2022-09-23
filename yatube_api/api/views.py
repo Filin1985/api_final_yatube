@@ -5,8 +5,14 @@ from rest_framework.permissions import IsAuthenticated
 
 
 from .permissions import IsAuthOrReadOnly
-from .serializers import CommentSerializer, PostSerializer, GroupSerializer, FollowSerializer
-from posts.models import Post, Group, User, Follow
+from .serializers import (
+    CommentSerializer,
+    PostSerializer,
+    GroupSerializer,
+    FollowSerializer
+)
+from posts.models import Post, Group, Follow
+
 
 class GroupViewSet(viewsets.ReadOnlyModelViewSet):
     """Endpoint для получения группы."""
