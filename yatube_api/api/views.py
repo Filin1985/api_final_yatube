@@ -10,7 +10,7 @@ from .serializers import (
     GroupSerializer,
     FollowSerializer
 )
-from posts.models import Post, Group, User
+from posts.models import Post, Group
 
 
 class GroupViewSet(viewsets.ReadOnlyModelViewSet):
